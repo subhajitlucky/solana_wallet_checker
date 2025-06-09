@@ -1,12 +1,66 @@
-# React + Vite
+# Solana Wallet Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application to check the SOL balance of any Solana wallet address on Devnet or Mainnet, built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
+- Enter any Solana wallet address and instantly view its SOL balance
+- Switch between Devnet and Mainnet
+- Fast, modern UI with React Router navigation
+- Error handling for invalid addresses and network issues
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+[Live Demo](#) <!-- Add your deployed link here if available -->
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+```bash
+git clone https://github.com/subhajitlucky/solana_wallet_checker.git
+cd solana_wallet_checker
+npm install
+```
+
+### Running Locally
+```bash
+npm run dev
+```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Linting
+```bash
+npm run lint
+```
+
+## Project Structure
+```
+solana-wallet-tracker/
+├── src/
+│   ├── components/      # Navbar, Footer
+│   ├── pages/           # Home, Tracker
+│   ├── App.jsx          # Main app component
+│   └── main.jsx         # Entry point
+├── public/
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+```
+
+## Tech Stack
+- React 19
+- Vite
+- @solana/web3.js
+- React Router DOM
+- ESLint
+
+## License
+MIT
