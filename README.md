@@ -9,7 +9,7 @@ A simple web application to check the SOL balance of any Solana wallet address o
 - Error handling for invalid addresses and network issues
 
 ## Demo
-[Live Demo](#) <!-- Add your deployed link here if available -->
+[Live Demo](https://subhajitlucky.github.io/solana_wallet_checker/) <!-- Add your deployed link here if available -->
 
 ## Getting Started
 
