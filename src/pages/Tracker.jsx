@@ -45,41 +45,46 @@ function Tracker(){
     }
 
     return(
-        <div>
-            <h2>Solana Wallet Tracker</h2>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>
-                        Network:
-                        <select 
-                            value={network}
-                            onChange={(e) => setNetwork(e.target.value)}
-                        >
-                            <option value="devnet">Devnet</option>
-                            <option value="mainnet">Mainnet</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Wallet Address:
+        <div className="container">
+            <div className="tracker-container">
+                <h2 className="text-center">Solana Wallet Tracker</h2>
+                <form onSubmit={handleSubmit} className="tracker-form">
+                    <div className="form-row">
+                        <div className="form-group">
+                            <label htmlFor="network">Network:</label>
+                            <select 
+                                id="network"
+                                value={network}
+                                onChange={(e) => setNetwork(e.target.value)}
+                            >
+                                <option value="devnet">Devnet</option>
+                                <option value="mainnet">Mainnet</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="wallet">Wallet Address:</label>
                         <input
                             id="wallet"
                             type="text"
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
-                            placeholder="Enter Solana Wallet Address"
+                            placeholder="Enter Solana Wallet Address (e.g., 11111111111111111111111111111112)"
                         />
-                    </label>
-                </div>
-                <button type="submit" disabled={loading}>
-                    {loading ? 'Loading...' : 'Check Balance'}
-                </button>
-            </form>
-            {balance !== null && (
-                <p>Balance: {balance} SOL on {network}</p>
-            )}
-            {error && <p className="error">{error}</p>}
+                    </div>
+                    <button type="submit" disabled={loading} className="submit-btn">
+                        {loading ? 'Checking Balance...' : 'Check Balance'}
+                    </button>
+                </form>
+                
+                {balance !== null && (
+                    <div className="balance-result">
+                        <div className="balance-amount">{balance.toFixed(4)} SOL</div>
+                        <div className="balance-network">on {network}</div>
+                    </div>
+                )}
+                {error && <div className="error">{error}</div>}
+            </div>
         </div>
     )
 }
