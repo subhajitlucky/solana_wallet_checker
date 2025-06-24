@@ -4,7 +4,7 @@
 
 *Professional Multi-Chain Portfolio Tracker*
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-3182ce?style=for-the-badge)](https://subhajitlucky.github.io/tokenvault/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-3182ce?style=for-the-badge)](https://subhajitlucky.github.io/tokenVault/)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Multi-Chain](https://img.shields.io/badge/Multi_Chain-8_Networks-3182ce?style=for-the-badge&logo=ethereum)](https://tokenvault.dev/)
@@ -45,7 +45,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tokenvault.git
+git clone https://github.com/subhajitlucky/tokenVault.git
 
 # Install dependencies
 npm install
@@ -106,6 +106,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for the multi-chain future**
 
-[🔗 Live Demo](https://subhajitlucky.github.io/tokenvault/) • [📧 Contact](mailto:your-email@example.com) • [🐦 Twitter](https://twitter.com/yourusername)
+[🔗 Live Demo](https://subhajitlucky.github.io/tokenVault/) • [📧 Contact](mailto:your-email@example.com) • [🐦 Twitter](https://twitter.com/yourusername)
 
 </div>

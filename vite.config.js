@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/', // Root path for development, will be updated for GitHub Pages when you rename repo
+  base: '/tokenVault/', // Set base path for GitHub Pages deployment
   plugins: [react()],
 })
