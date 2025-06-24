@@ -4,8 +4,8 @@ function Footer(){
     return(
         <footer className="footer">
             <div className="footer-content">
-                <p>Solana Wallet Tracker © 2025</p>
-                <p>Built with React & Solana Web3.js</p>
+                <p>TokenVault © 2025</p>
+                <p>Built with ❤️ by <a href="https://github.com/subhajitluck" target="_blank" rel="noopener noreferrer">Subhajit</a></p>
             </div>
         </footer>
     )
