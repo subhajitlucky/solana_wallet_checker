@@ -90,7 +90,7 @@ body {
 
 .navbar-nav a {
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -114,6 +114,9 @@ body {
 .home-hero {
   text-align: center;
   padding: 4rem 0;
+}
+
+.hero-content {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -173,8 +176,9 @@ body {
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 4rem;
 }
@@ -187,6 +191,8 @@ body {
   box-shadow: var(--shadow-light);
   border: 1px solid var(--border-color);
   transition: all 0.2s ease;
+  flex: 1 1 300px;
+  max-width: 350px;
 }
 
 .feature-card:hover {
@@ -399,6 +405,16 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.footer-content a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-content a:hover {
+  color: var(--accent-primary);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar-content {
@@ -426,7 +442,6 @@ body {
   }
   
   .features-grid {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   

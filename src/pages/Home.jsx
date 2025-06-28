@@ -5,22 +5,24 @@ function Home(){
     return(
         <div className="container">
             <div className="home-hero">
-                <div className="hero-brand">
-                    <span className="hero-icon">🔐</span>
-                    <h1>TokenVault</h1>
-                </div>
-                <p className="hero-tagline">
-                    <strong>Professional Multi-Chain Portfolio Tracker</strong>
-                </p>
-                <p>
-                    Securely track your cryptocurrency portfolio across multiple blockchains. 
-                    Monitor balances, tokens, and assets across Solana, Ethereum, Polygon, 
-                    Arbitrum, Optimism, and more with professional-grade tools.
-                </p>
-                <div className="hero-cta">
-                    <Link to="/tracker" className="cta-button">
-                        Check Your Balance
-                    </Link>
+                <div className="hero-content">
+                    <div className="hero-brand">
+                        <span className="hero-icon">🔐</span>
+                        <h1>TokenVault</h1>
+                    </div>
+                    <p className="hero-tagline">
+                        <strong>Professional Multi-Chain Portfolio Tracker</strong>
+                    </p>
+                    <p>
+                        Securely track your cryptocurrency portfolio across multiple blockchains. 
+                        Monitor balances, tokens, and assets across Solana, Ethereum, Polygon, 
+                        Arbitrum, Optimism, and more with professional-grade tools.
+                    </p>
+                    <div className="hero-cta">
+                        <Link to="/tracker" className="cta-button">
+                            Check Your Balance
+                        </Link>
+                    </div>
                 </div>
                 
                 <div className="features-grid">
