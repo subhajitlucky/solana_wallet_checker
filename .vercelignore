@@ -1,7 +1,4 @@
 node_modules/
 .git/
 *.log
-.env*
-src/
-public/
-.github/ 
+.env* 
