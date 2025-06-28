@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:vercel": "vite build --base=/",
+    "build:github": "vite build --base=/tokenVault/",
     "lint": "eslint .",
     "preview": "vite preview"
   },
